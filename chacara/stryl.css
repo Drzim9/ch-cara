@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #131010;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #fffaf0;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #d1a050;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 50px; /* padding grande no desktop */
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #fdfdfd;
+}
+
+.hero-img {
+  flex: 1;
+  min-width: 100px;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.sobre, .eventos, .contato, .localizacao, .orcamento, .diferenciais {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #a6793d;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.galeria {
+  padding: 3rem 1rem;
+  background-color: #fff;
+}
+
+.carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.contato-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #F6F0F0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s, background 0.3s;
+  text-decoration: none;
+  color: #030202;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #F2E2B1;
+}
+
+.botao-orcamento {
+  display: block;
+  text-align: center;
+  background: #a6793d;
+  color: #dbd3d3;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  width: fit-content;
+  margin: 2rem auto;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.botao-orcamento:hover {
+  background: #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #ffffff;
+  color: #ac1919;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .hero-text h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
