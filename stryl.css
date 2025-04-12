@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden; 
 }
 
 header {
@@ -22,6 +23,8 @@ header {
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   z-index: 100;
+  justify-content: center;
+  align-items: center; 
 }
 
 .container {
@@ -50,14 +53,13 @@ nav a {
 nav a:hover {
   color: #d1a050;
 }
-
 .hero {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 150px 50px;
-  gap: 40px;
+  gap: 140px;
   flex-wrap: wrap;
   background-color: #fdfdfd;
 }
@@ -71,13 +73,13 @@ nav a:hover {
   width: 100%;
   max-width: 500px;
   height: auto;
-  border-radius: 30px;
+  border-radius: 50px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 .hero-text h2 {
@@ -185,7 +187,7 @@ h2 {
 footer {
   text-align: center;
   padding: 2rem;
-  background: #ffffff;
+  background: #fff;
   color: #ac1919;
   margin-top: 2rem;
 }
@@ -206,10 +208,6 @@ ul li {
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 20px;
-  }
-
-  body {
-    padding: auto;
   }
 
   header h1 {
@@ -242,11 +240,14 @@ ul li {
     flex: 1 1 100%;
     max-width: 100%;
   }
-  
+
   .container {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    text-align: center;
+  }
+  .container-tudo {
     text-align: center;
   }
 }
