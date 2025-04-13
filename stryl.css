@@ -225,6 +225,10 @@ ul li {
   nav li {
     margin: 0 5px;
   }
+  
+  .hero {
+    text-align: center;
+  }
 
   .hero-text h2 {
     font-size: 1.7rem;
