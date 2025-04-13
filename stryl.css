@@ -216,7 +216,7 @@ ul li {
 
   .hero-img img {
     max-width: 250px;
-    width: 100%;
+    width: 100px;
     height: auto;
     border-radius: 30px; 
   }
@@ -269,7 +269,7 @@ ul li {
 
 @media (max-width: 500px) {
   .hero-img img {
-    max-width: 200px; 
+    max-width: 500px; 
     border-radius: 20px;
   }
 
