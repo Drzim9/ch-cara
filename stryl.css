@@ -214,9 +214,10 @@ ul li {
 
   .hero-img img {
     width: 100%; 
-    height: 600px; 
+    height: 1000px; 
     object-fit: cover; 
-    border-radius: 30px;
+    border-radius: 20px;
+    text-align: center;
   }
 
   .hero-text h2 {
