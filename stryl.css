@@ -213,11 +213,11 @@ ul li {
     text-align: center;
   }
 
-  .hero-img img {
+  .hero-img  {
     width: 100%; 
     height: 100px; 
     object-fit: cover; 
-    border-radius: 20px;
+   
   }
 
   .hero-text h2 {
@@ -267,7 +267,7 @@ ul li {
     width: 1000%; 
     height: 1000px; 
     object-fit: cover; 
-    border-radius: 90px;
+    border-radius: 10px;
   }
 
   .hero-text h2 {
