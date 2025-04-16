@@ -169,6 +169,51 @@ h2 {
   background-color: #F2E2B1;
 }
 
+.blog {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.titulo-blog {
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 40px;
+  color: #d1a050;
+  font-weight: 700;
+}
+
+.post {
+  background-color: #fafafa;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-left: 6px solid #d1a050;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post .data {
+  font-size: 0.9em;
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.post p {
+  font-size: 1em;
+  color: #444;
+}
 .botao-orcamento {
   display: block;
   text-align: center;
@@ -217,7 +262,6 @@ ul li {
     width: 100%; 
     height: 100px; 
     object-fit: cover; 
-   
   }
 
   .hero-text h2 {
@@ -260,6 +304,29 @@ ul li {
   .container-tudo {
     text-align: center;
   }
+
+  /* Novidades (Blog) */
+  .blog {
+    padding: 30px 15px;
+  }
+
+  .titulo-blog {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .post {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .post h3 {
+    font-size: 1.3em;
+  }
+
+  .post p {
+    font-size: 0.95em;
+  }
 }
 
 @media (max-width: 500px) {
@@ -276,5 +343,22 @@ ul li {
 
   .hero-text p {
     font-size: 0.9rem;
+  }
+
+  /* Novidades (Blog) */
+  .titulo-blog {
+    font-size: 1.8em;
+  }
+
+  .post {
+    padding: 18px;
+  }
+
+  .post h3 {
+    font-size: 1.2em;
+  }
+
+  .post p {
+    font-size: 0.9em;
   }
 }
