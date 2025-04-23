@@ -38,3 +38,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }, i * 100); // delay suave entre elementos
   });
 });
+
+ 
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+
+
+hamburger.addEventListener('click', () => {
+  
+  nav.classList.toggle('active');
+});
