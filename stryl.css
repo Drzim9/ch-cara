@@ -528,7 +528,7 @@ ul li {
   .post h3 {
     font-size: 1.2em;
   }
-
+  
   .post p {
     font-size: 0.9em;
   }
@@ -539,5 +539,9 @@ ul li {
 
   nav li {
     font-size: 1.1rem; /* Aumentando o tamanho da fonte das opções no menu */
+  }
+
+  .header {
+    width: 350px;
   }
 }
